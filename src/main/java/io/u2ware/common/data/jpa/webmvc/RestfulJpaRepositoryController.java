@@ -96,6 +96,7 @@ public class RestfulJpaRepositoryController extends CopiedAbstractRepositoryRest
 
 
         Repository<?,?> repository = getRepositoryFor(resourceInformation);
+
         verifySupportedMethod(repository);
 
         Object content = mapper.convertValue(payload, resourceInformation.getDomainType());
@@ -113,9 +114,10 @@ public class RestfulJpaRepositoryController extends CopiedAbstractRepositoryRest
 
 
     protected void verifySupportedMethod(Repository<?, ?> repository) {
-        if(! ClassUtils.isAssignableValue(RestfulJpaRepository.class, repository)){
-            throw new ResourceNotFoundException();
-        }
+        if(ClassUtils.isAssignableValue(JpaSpecificationExecutor.class, repository)) return;
+        if(ClassUtils.isAssignableValue(QuerydslPredicateExecutor.class, repository)) return;
+        
+        throw new ResourceNotFoundException();
     }
 
 
