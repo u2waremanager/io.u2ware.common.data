@@ -6,8 +6,8 @@ Please Setting [Github Packages](https://docs.github.com/ko/packages/working-wit
 ```xml
 <dependency>
 	<groupId>io.u2ware</groupId>
-	<artifactId>common.data</artifactId>
-	<version>3.2.7</version>
+	<artifactId>u2ware-common-data</artifactId>
+	<version>3.4.11</version>
 </dependency>
 ```
 
