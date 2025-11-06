@@ -1,4 +1,4 @@
-package io.common.data.test.demo1;
+package io.u2ware.common.data.test.demo1;
 
 import org.springframework.data.rest.core.annotation.HandleAfterCreate;
 import org.springframework.data.rest.core.annotation.HandleAfterDelete;

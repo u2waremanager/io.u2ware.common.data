@@ -1,4 +1,4 @@
-package io.common.data.test.demo1;
+package io.u2ware.common.data.test.demo1;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

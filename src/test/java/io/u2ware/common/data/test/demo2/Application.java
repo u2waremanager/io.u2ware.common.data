@@ -1,4 +1,4 @@
-package io.common.data.test.demo1;
+package io.u2ware.common.data.test.demo2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package io.common.data.test.demo2;
+package io.u2ware.common.data.test.demo1;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,6 +12,5 @@ public class Foo {
     @Id
     @GeneratedValue
     private Long seq;
-
     private String name;
 }
