@@ -40,6 +40,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import io.u2ware.common.data.jpa.repository.RestfulJpaRepository;
 import io.u2ware.common.data.jpa.repository.query.MutableSpecification;
 import io.u2ware.common.data.jpa.repository.query.PartTreeSpecification;
 import io.u2ware.common.data.rest.core.event.AfterReadEvent;
@@ -113,8 +114,9 @@ public class RestfulJpaRepositoryController extends CopiedAbstractRepositoryRest
 
 
     protected void verifySupportedMethod(Repository<?, ?> repository) {
-        if(ClassUtils.isAssignableValue(JpaSpecificationExecutor.class, repository)) return;
-        if(ClassUtils.isAssignableValue(QuerydslPredicateExecutor.class, repository)) return;
+        // if(ClassUtils.isAssignableValue(JpaSpecificationExecutor.class, repository)) return;
+        // if(ClassUtils.isAssignableValue(QuerydslPredicateExecutor.class, repository)) return;
+        if(ClassUtils.isAssignableValue(RestfulJpaRepository.class, repository)) return;
         
         throw new ResourceNotFoundException();
     }

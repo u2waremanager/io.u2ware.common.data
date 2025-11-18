@@ -93,19 +93,9 @@ public class Application {
 }
 ```
 
-추가로, JPA 를 사용하는 Spring Data Repository 에  [JpaSpecificationExecutor<T>](https://spring.io/projects/spring-data-jpa) 확장이 필요합니다.
+추가로, JPA 를 사용하는 Spring Data Repository 에  [RestfulJpaRepositor<T,ID>](src/main/java/io/u2ware/common/data/jpa/repository/RestfulJpaRepository.java) 확장이 필요합니다.
 
 ```java
-public interface FooRepository extends JpaRepository<Foo, Long>
-					,JpaSpecificationExecutor<Foo>  
-{  
-}
-```
-
-`u2ware-common-data` 가 제공하는 [RestfulJpaRepositor<T,ID>](src/main/java/io/u2ware/common/data/jpa/repository/RestfulJpaRepository.java) 을 사용 할 수도 있습니다.
-```java
-import io.u2ware.common.data.jpa.repository.RestfulJpaRepository;
-
 public interface FooRepository extends RestfulJpaRepositor<Foo, Long>
 {  
 }
