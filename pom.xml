@@ -68,28 +68,6 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>org.hsqldb</groupId>
-			<artifactId>hsqldb</artifactId>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
-			<scope>test</scope>
-		</dependency>
-
-
-		<dependency>
-			<groupId>io.u2ware</groupId>
-			<artifactId>u2ware-common-docs</artifactId>
-			<version>${u2ware.version}</version>
-			<scope>test</scope>
-		</dependency>
-
-
 	</dependencies>
 
 	<build>
