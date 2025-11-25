@@ -10,7 +10,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>io.u2ware</groupId>
-	<artifactId>common-data</artifactId>
+	<artifactId>common.data</artifactId>
 	<version>3.4.11</version>
 	<name>u2ware-common-data</name>
 	<description>u2ware-common-data</description>
